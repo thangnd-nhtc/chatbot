@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+ctransformers
+huggingface_hub
+pydantic
+python-multipart
+pandas
+openpyxl
+langchain
+langchain-community
+langchain-huggingface
+chromadb
+sentence-transformers

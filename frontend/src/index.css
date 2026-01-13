@@ -1,0 +1,86 @@
+:root {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  /* Lunar New Year (Tet) Theme - Modern Luxury */
+  --color-bg: #1a0202;
+  /* Very deep dark red */
+  --color-surface: rgba(45, 5, 5, 0.7);
+  --color-surface-hover: rgba(70, 10, 10, 0.8);
+
+  --color-primary: #d4a017;
+  /* Noble Gold */
+  --color-primary-glow: rgba(212, 160, 23, 0.4);
+
+  --color-secondary: #ff4d4d;
+  /* Prosperity Red */
+  --color-secondary-glow: rgba(255, 77, 77, 0.3);
+
+  --color-accent: #ffb7c5;
+  /* Peach Blossom Pink */
+
+  --color-text-main: #fff5f5;
+  --color-text-dim: #d1b8b8;
+
+  --color-bot-msg: rgba(60, 10, 10, 0.9);
+  --color-user-msg: linear-gradient(135deg, #d4a017 0%, #b8860b 100%);
+
+  --shadow-lg: 0 15px 25px -5px rgba(0, 0, 0, 0.5);
+  --glass-border: 1px solid rgba(212, 160, 23, 0.2);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(212, 160, 23, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 100% 100%, rgba(255, 77, 77, 0.08) 0%, transparent 30%);
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background blossom animation container */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/silk.pattern') opacity(0.3);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 160, 23, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 160, 23, 0.4);
+}
